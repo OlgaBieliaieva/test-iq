@@ -1,0 +1,26 @@
+
+
+
+:root {
+  --font-family-primary: 'PT_Serif', serif;
+  --font-family-accent: 'Yeseva_One', serif;
+  --font-family-buttons: 'Merriweather', serif;
+  --font-family-sans: 'Roboto', sans-serif;
+
+  --background-primary: #f3f3f2;
+  --background-secondary: #181818;
+  --background-opacity: rgba(242, 243, 243, 0.15);
+  --background-accent: #ffc700;
+
+  --color-primary: #272727;
+  --color-secondary: #ffffff;
+  --color-accent: #ffc700;
+
+  --font-size-xxs: 8px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-l: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 30px;
+}

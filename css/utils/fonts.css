@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "PT_Serif";
+  src: local("PT_Serif"),
+    url("../../assets/fonts/PT_Serif/PTSerif-Regular.ttf") format("ttf"),
+    url("../../assets/fonts/PT_Serif/PTSerif-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT_Serif";
+  src: local("PT_Serif"),
+    url("../../assets/fonts/PT_Serif/PTSerif-Bold.ttf") format("ttf"),
+    url("../../assets/fonts/PT_Serif/PTSerif-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Yeseva_One";
+  src: local("Yeseva_One"),
+    url("../../assets/fonts/Yeseva_One/YesevaOne-Regular.ttf") format("ttf"),
+    url("../../assets/fonts/Yeseva_One/YesevaOne-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+    url("../../assets/fonts/Merriweather/Merriweather-Regular.ttf")
+      format("ttf"),
+    url("../../assets/fonts/Merriweather/Merriweather-Regular.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+    url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf") format("ttf"),
+    url("../../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
+    url("../../assets/fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+    url("../../assets/fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}

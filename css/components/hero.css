@@ -1,0 +1,79 @@
+.hero {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 11px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-secondary);
+
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(47, 48, 58, 0.4)),
+      to(rgba(47, 48, 58, 0.4))
+    ),
+    url(../../assets/images/rain_bg.jpg);
+
+  background-image: -o-linear-gradient(
+      left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../assets/images/rain_bg.jpg);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../assets/images/rain_bg.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url(../../assets/images/rain_bg@2x.jpg);
+
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../assets/images/rain_bg@2x.jpg);
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../assets/images/rain_bg@2x.jpg);
+  }
+}
+.hero-title {
+    
+  text-align: center;
+  color: var(--color-accent);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-xxl);
+  text-transform: uppercase;
+  
+}
+.title-accent {
+  color: var(--color-secondary);
+  text-shadow: none;
+  text-transform: none;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xl);
+  
+}
