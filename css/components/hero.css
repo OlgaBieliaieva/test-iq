@@ -1,73 +1,30 @@
 .hero {
   width: 100%;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 11px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--background-secondary);
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(47, 48, 58, 0.4)),
-      to(rgba(47, 48, 58, 0.4))
-    ),
-    url(../../assets/images/rain_bg.jpg);
-
-  background-image: -o-linear-gradient(
-      left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../assets/images/rain_bg.jpg);
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../assets/images/rain_bg.jpg);
+  background-image: url(../../assets/images/rain_bg.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(rgba(47, 48, 58, 0.4)),
-        to(rgba(47, 48, 58, 0.4))
-      ),
-      url(../../assets/images/rain_bg@2x.jpg);
-
-    background-image: -o-linear-gradient(
-        left,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../assets/images/rain_bg@2x.jpg);
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../assets/images/rain_bg@2x.jpg);
+    background-image: url(../../assets/images/rain_bg@2x.jpg);
   }
 }
 .hero-title {
-    
   text-align: center;
   color: var(--color-accent);
   text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--font-family-accent);
   font-size: var(--font-size-xxl);
   text-transform: uppercase;
-  
+  line-height: 1.2;
+  margin-bottom: 150px;
 }
 .title-accent {
   color: var(--color-secondary);
@@ -75,5 +32,28 @@
   text-transform: none;
   font-family: var(--font-family-primary);
   font-size: var(--font-size-xl);
-  
+  line-height: 2.2;
+}
+.hero > .cta-btn {
+  margin-bottom: 22px;
+}
+.hero-content {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  line-height: 1.26;
+  margin-bottom: 11px;
+}
+.content-accent {
+  color: var(--color-accent);
+}
+.details-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: var(--color-secondary);
+  font-size: var(--font-size-xxs);
 }

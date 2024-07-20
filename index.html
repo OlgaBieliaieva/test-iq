@@ -38,45 +38,52 @@
             ><br />тест на <br />определение <br />
             IQ
           </h1>
-          <button type="button">пройти тест</button>
-          <p>
-            и получите рекомендации по развитию своего интеллекта и улучшению
-            финансового благосостояния и личной жизни
+          <button class="cta-btn color" type="button">пройти тест</button>
+          <p class="hero-content">
+            <span class="content-accent"
+              >И получите рекомендации по развитию своего интеллекта</span
+            ><br />
+            и улучшению финансового благосостояния и личной жизни
           </p>
-          <a href="">
-            <svg class="btn-icon" width="16" height="16">
+          <a href="#quote" class="details-btn">
+            <svg width="24" height="24">
               <use href="./assets/icons/sprite.svg#arrow-up"></use>
             </svg>
+            <span>Подробнее</span>
           </a>
-          <span>подробнее</span>
         </div>
       </section>
       <section id="quote">
-        <div>
+        <div class="container quote">
           <svg class="btn-icon" width="16" height="16">
             <use href="./assets/icons/sprite.svg#quotes-up"></use>
           </svg>
-          <p>
-            Профессиональный IQ-тест позволяет не только определить коэффициент
-            вашего интеллекта, но и выработать список рекомендаций для повышения
-            этого показателя.
+          <p class="quote-content">
+            Профессиональный<br />IQ-тест позволяет не только определить
+            коэффициент вашего интеллекта,<br />но и выработать список
+            рекомендаций для повышения этого показателя.
           </p>
-          <svg class="btn-icon" width="16" height="16">
+          <svg class="btn-icon down" width="16" height="16">
             <use href="./assets/icons/sprite.svg#quotes-down"></use>
           </svg>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
-            Также по результатам теста
-            <span>вы получите</span>подробные<span>советы</span>по определению
+      <section id="description">
+        <div class="container description">
+          <p class="description-content">
+            Также по результатам теста <br />
+            <span class="description-accent"> вы получите </span> подробные
+            <span class="description-accent"> советы </span> по определению
             наиболее перспективной
-            <span
-              >для вашего типа <span>интеллекта</span>сферы деятельности,</span
-            >которая принесет вам скорейший финансовый результат.
+            <span class="description-accent">
+              для вашего типа
+              <span class="description-accent low"> интеллекта </span> сферы
+              деятельности,
+            </span>
+            <br />
+            которая принесет вам скорейший финансовый результат.
           </p>
-          <picture>
+          <picture class="description-image">
             <source
               srcset="
                 ./assets/images/frame.png    1x,
@@ -90,29 +97,56 @@
               alt="схема человеческого мозга"
             />
           </picture>
-          <button type="button">пройти тест</button>
+          <button class="cta-btn color" type="button">пройти тест</button>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
-            Прохождение теста займет у вас не более<span>12 минут</span>, а его
-            результаты вы сможете<span>использовать всю жизнь.</span>
+      <section id="details">
+        <div class="container details">
+          <p class="details-content">
+            Прохождение теста займет у<br />вас не более
+            <span class="details-accent clr">12 минут</span>, а его
+            <span class="details-accent">результаты</span> вы сможете
+            <span class="details-accent clr">использовать всю жизнь.</span>
           </p>
-          <div>
-            <p>
+          <div class="details-wrapper">
+            <p class="details-content bg">
               Профессиональная интерпретация и детально
-              <span>проработанные рекомендации</span>позволят вам
-              качественно<span>изменить все аспекты своей жизни:</span>от
-              финансового до любовного.
+              <span class="details-bold">проработанные рекомендации</span>
+              позволят вам качественно<span class="details-bold">
+                изменить все аспекты своей жизни: </span
+              >от финансового до любовного.
             </p>
           </div>
-          <button type="button">пройти тест</button>
+          <button class="cta-btn transparent" type="button">пройти тест</button>
+          <picture class="img-lightning up">
+            <source
+              srcset="
+                ./assets/images/lightning_up.png    1x,
+                ./assets/images/lightning_up@2x.png 2x
+              "
+              src="./assets/images/lightning_up.png"
+              type="image/png"
+            />
+            <img src="./assets/images/lightning_up.png" alt="молния" />
+          </picture>
+          <picture class="img-lightning down">
+            <source
+              srcset="
+                ./assets/images/lightning_down.png    1x,
+                ./assets/images/lightning_down@2x.png 2x
+              "
+              src="./assets/images/lightning_down.png"
+              type="image/png"
+            />
+            <img src="./assets/images/lightning_down.png" alt="молния" />
+          </picture>
+          <footer id="footer">
+            <div class="container footer">
+              <p class="footer-content">&copy; 2019</p>
+            </div>
+          </footer>
         </div>
       </section>
     </main>
-    <footer>
-      <div><p>&copy; 2019</p></div>
-    </footer>
   </body>
 </html>

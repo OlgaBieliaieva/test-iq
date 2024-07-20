@@ -46,6 +46,16 @@
 }
 
 @font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+    url("../../assets/fonts/Merriweather/Merriweather-Black.ttf") format("ttf"),
+    url("../../assets/fonts/Merriweather/Merriweather-Black.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: 900;
+}
+
+@font-face {
   font-family: "Roboto";
   src: local("Roboto"),
     url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf"),

@@ -1,0 +1,44 @@
+.quote {
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 32px;
+  padding-left: 36px;
+  padding-right: 36px;
+  color: var(--color-secondary);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-secondary);
+  background-image: radial-gradient(
+      84.35% 50.3% at 48.75% 49.71%,
+      #2950c2 0%,
+      rgba(38, 91, 199, 0.96) 40.63%,
+      rgba(39, 98, 187, 0) 85.42%
+    ),
+    url(../../assets/images/light_bg.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: radial-gradient(
+        84.35% 50.3% at 48.75% 49.71%,
+        #2950c2 0%,
+        rgba(38, 91, 199, 0.96) 40.63%,
+        rgba(39, 98, 187, 0) 85.42%
+      ),
+      url(../../assets/images/light_bg@2x.jpg);
+  }
+}
+.quote-content {
+  text-align: center;
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-xl);
+  line-height: 1.27;
+}
+.btn-icon.down {
+  display: block;
+  margin: 0 0 0 auto;
+  text-align: end;
+}
