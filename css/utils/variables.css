@@ -7,12 +7,17 @@
   --background-primary: #f3f3f2;
   --background-secondary: #181818;
   --background-opacity: rgba(242, 243, 243, 0.15);
+  --background-progress: rgba(242, 243, 243, 0.59);
   --background-frame: rgba(243, 243, 242, 0.8);
+  --background-form-btn-disabled: #DADADA;
+  --background-progress-success: #3bde7c;
   --background-accent: #ffc700;
 
   --color-primary: #272727;
   --color-secondary: #ffffff;
   --color-accent: #ffc700;
+  --color-form-btn-disabled: #8E8E8E;
+  --color-form-btn-active: #0D0C11;
   --color-footer: rgba(255, 255, 255, 0.5);
 
   --font-size-xxs: 8px;

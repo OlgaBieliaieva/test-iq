@@ -1,5 +1,7 @@
 .cta-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: 189px;
   height: 41px;
@@ -18,4 +20,13 @@
   background-color: transparent;
   border: 1px solid var(--color-secondary);
   margin-bottom: 52px;
+}
+.form.disabled {
+  color: var(--color-form-btn-disabled);
+  background-color: var(--background-form-btn-disabled);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.form.active {
+  color: var(--color-form-btn-active);
+  background-color: var(--background-accent);
 }

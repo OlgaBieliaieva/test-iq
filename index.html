@@ -38,14 +38,18 @@
             ><br />тест на <br />определение <br />
             IQ
           </h1>
-          <button class="cta-btn color" type="button">пройти тест</button>
+          <a href="./form.html" class="cta-btn color">пройти тест</a>
           <p class="hero-content">
             <span class="content-accent"
               >И получите рекомендации по развитию своего интеллекта</span
             ><br />
             и улучшению финансового благосостояния и личной жизни
           </p>
-          <a href="#quote" class="details-btn">
+          <a
+            href="#quote"
+            class="details-btn"
+            rel="noreferrer noopener nofollow"
+          >
             <svg width="24" height="24">
               <use href="./assets/icons/sprite.svg#arrow-up"></use>
             </svg>
@@ -97,7 +101,12 @@
               alt="схема человеческого мозга"
             />
           </picture>
-          <button class="cta-btn color" type="button">пройти тест</button>
+          <a
+            href="./form.html"
+            class="cta-btn color"
+            rel="noreferrer noopener nofollow"
+            >пройти тест</a
+          >
         </div>
       </section>
       <section id="details">
@@ -117,7 +126,12 @@
               >от финансового до любовного.
             </p>
           </div>
-          <button class="cta-btn transparent" type="button">пройти тест</button>
+          <a
+            href="./form.html"
+            class="cta-btn transparent"
+            rel="noreferrer noopener nofollow"
+            >пройти тест</a
+          >
           <picture class="img-lightning up">
             <source
               srcset="
@@ -148,5 +162,38 @@
         </div>
       </section>
     </main>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg class="mobile-menu-btn-icon" width="28" height="28">
+          <use href="./assets/icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" rel="noreferrer noopener nofollow"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#quote" rel="noreferrer noopener nofollow"
+              >Информация о тесте</a
+            >
+          </li>
+          <li class="nav-item clr">
+            <a href="./form.html" rel="noreferrer noopener nofollow"
+              >Пройти тест</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

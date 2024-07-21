@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Точный и быстрый тест на определение IQ"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Тест на определение IQ</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container header form">
+        <nav>
+          <button class="menu-btn js-open-menu" type="button">
+            <svg class="btn-icon" width="24" height="16">
+              <use href="./assets/icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <img src="./assets/images/logo.png" alt="логотип" width="48" />
+        <h1 class="page-title">тест на определение IQ</h1>
+      </div>
+    </header>
+    <main>
+      <section id="test">
+        <div class="container test">
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <form class="test-form" name="test-form">
+            <fieldset class="form-field" id="1">
+              <p class="question" style="margin-bottom: 38px; font-size: 20px">
+                Ваш пол:
+              </p>
+              <div class="answers-wrapper">
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Мужчина"
+                    name="question1"
+                    required
+                  />
+                  Мужчина
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Женщина"
+                    name="question1"
+                  />
+                  Женщина
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="2">
+              <p class="question" style="margin-bottom: 48px; font-size: 20px">
+                Укажите ваш возраст:
+              </p>
+              <div class="answers-wrapper">
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="До 18"
+                    name="question2"
+                    required
+                  />
+                  До 18
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="От 18 до 28"
+                    name="question2"
+                  />
+                  От 18 до 28
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="От 29 до 35"
+                    name="question2"
+                  />
+                  От 29 до 35
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="От 36"
+                    name="question2"
+                  />
+                  От 36
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="3">
+              <p class="question" style="margin-bottom: 42px; font-size: 20px">
+                Выберите лишнее:
+              </p>
+              <div class="answers-wrapper">
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Дом"
+                    name="question3"
+                    required
+                  />
+                  Дом
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Шалаш"
+                    name="question3"
+                  />
+                  Шалаш
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Бунгало"
+                    name="question3"
+                  />
+                  Бунгало
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Скамейка"
+                    name="question3"
+                  />
+                  Скамейка
+                </label>
+                <label class="field-label">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Хижина"
+                    name="question3"
+                  />
+                  Хижина
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="4">
+              <p class="question" style="margin-bottom: 16px">
+                Продолжите числовой ряд: <br />
+                18 20 24 32
+              </p>
+              <div class="answers-wrapper">
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="62"
+                    name="question4"
+                    required
+                  />
+                  62
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="48"
+                    name="question4"
+                  />
+                  48
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="74"
+                    name="question4"
+                  />
+                  74
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="57"
+                    name="question4"
+                  />
+                  57
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="60"
+                    name="question4"
+                  />
+                  60
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="77"
+                    name="question4"
+                  />
+                  77
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="5">
+              <p class="question" style="padding: 0 20px; margin-bottom: 16px">
+                Выберите цвет, который сейчас наиболее Вам приятен:
+              </p>
+              <div class="answers-wrapper grid">
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#A8A8A8"
+                    name="question5"
+                    required
+                    style="background-color: #a8a8a8"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#0000A9"
+                    name="question5"
+                    required
+                    style="background-color: #0000a9"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#00A701"
+                    name="question5"
+                    required
+                    style="background-color: #00a701"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#F60100"
+                    name="question5"
+                    required
+                    style="background-color: #f60100"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#FDFF19"
+                    name="question5"
+                    required
+                    style="background-color: #fdff19"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#A95403"
+                    name="question5"
+                    required
+                    style="background-color: #a95403"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#000000"
+                    name="question5"
+                    required
+                    style="background-color: #000000"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#850068"
+                    name="question5"
+                    required
+                    style="background-color: #850068"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#46B2AC"
+                    name="question5"
+                    required
+                    style="background-color: #46b2ac"
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="6">
+              <p class="question" style="padding: 0 20px; margin-bottom: 12px">
+                Отдохните пару секунд, еще раз Выберите цвет, который сейчас
+                наиболее Вам приятен:
+              </p>
+              <div class="answers-wrapper grid">
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#A8A8A8"
+                    name="question6"
+                    required
+                    style="background-color: #a8a8a8"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#46B2AC"
+                    name="question6"
+                    required
+                    style="background-color: #46b2ac"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#A95403"
+                    name="question6"
+                    required
+                    style="background-color: #a95403"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#00A701"
+                    name="question6"
+                    required
+                    style="background-color: #00a701"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#000000"
+                    name="question6"
+                    required
+                    style="background-color: #000000"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#F60100"
+                    name="question6"
+                    required
+                    style="background-color: #f60100"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#850068"
+                    name="question6"
+                    required
+                    style="background-color: #850068"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#FDFF19"
+                    name="question6"
+                    required
+                    style="background-color: #fdff19"
+                  />
+                </label>
+                <label class="field-label grid">
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="#0000A9"
+                    name="question6"
+                    required
+                    style="background-color: #0000a9"
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="7">
+              <p class="question" style="margin-bottom: 23px; font-size: 20px">
+                Какой из городов лишний?
+              </p>
+              <div class="answers-wrapper">
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Вашингтон"
+                    name="question7"
+                    required
+                  />
+                  Вашингтон
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Лондон"
+                    name="question7"
+                  />
+                  Лондон
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Париж"
+                    name="question7"
+                  />
+                  Париж
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Нью-Йорк"
+                    name="question7"
+                  />
+                  Нью-Йорк
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Москва"
+                    name="question7"
+                  />
+                  Москва
+                </label>
+                <label class="field-label" style="line-height: 2.72">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Оттава"
+                    name="question7"
+                  />
+                  Оттава
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="8">
+              <p class="question" style="padding: 0 12px; margin-bottom: 20px">
+                Выберите правильную фигуру из четырёх пронумерованных.
+              </p>
+              <img
+                src="./assets/images/question8.jpg"
+                alt="схема c фигурами"
+                width="185"
+                height="235"
+                style="margin: 0 auto; margin-bottom: 20px"
+              />
+              <div
+                class="answers-wrapper grid"
+                style="display: flex; gap: 29px; align-items: center"
+              >
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="1"
+                    name="question8"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content">1</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="2"
+                    name="question8"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content">2</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="3"
+                    name="question8"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content">3</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="4"
+                    name="question8"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content">4</span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="9">
+              <p class="question" style="margin-bottom: 30px">
+                Вам привычнее и важнее:
+              </p>
+              <div class="answers-wrapper">
+                <label
+                  class="field-label"
+                  style="
+                    height: 78px;
+                    gap: 15px;
+                    line-height: 1.11;
+                    padding-right: 25px;
+                  "
+                >
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Наслаждаться
+                    каждой минутой 
+                    проведенного времени"
+                    name="question9"
+                    required
+                  />
+                  Наслаждаться каждой минутой проведенного времени
+                </label>
+                <label
+                  class="field-label"
+                  style="height: 78px; gap: 15px; line-height: 1.11"
+                >
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Быть устремленными 
+                    мыслями в будущее"
+                    name="question9"
+                  />
+                  Быть устремленными мыслями в будущее
+                </label>
+                <label
+                  class="field-label"
+                  style="height: 78px; gap: 15px; line-height: 1.11"
+                >
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Учитывать в ежедневной 
+                    практике прошлый опыт"
+                    name="question9"
+                  />
+                  Учитывать в ежедневной практике прошлый опыт
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="10">
+              <p class="question" style="margin-bottom: 12px; font-size: 16px">
+                Какое определение, по-Вашему, больше подходит к этому
+                геометрическому изображению:
+              </p>
+              <img
+                src="./assets/images/question10.jpg"
+                alt="геометрическое изображение"
+                width="173"
+                height="115"
+                style="margin: 0 auto; margin-bottom: 20px"
+              />
+              <div class="answers-wrapper">
+                <label class="field-label" style="height: 50px">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Оно остроконечное"
+                    name="question10"
+                    required
+                  />
+                  Оно остроконечное
+                </label>
+                <label class="field-label" style="height: 50px">
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Оно устойчиво"
+                    name="question10"
+                    required
+                  />
+                  Оно устойчиво
+                </label>
+                <label
+                  class="field-label"
+                  style="height: 50px; font-size: 16px; line-height: 1.06"
+                >
+                  <input
+                    class="field-input"
+                    type="radio"
+                    value="Оно-находится в состоянии равновесия"
+                    name="question10"
+                    required
+                  />
+                  Оно-находится в состоянии равновесия
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-field" id="11">
+              <p class="question" style="margin-bottom: 15px; font-size: 20px">
+                Вставьте подходящее число
+              </p>
+              <img
+                src="./assets/images/question11.jpg"
+                alt="схема c фигурами"
+                width="228"
+                height="207"
+                style="margin: 0 auto; margin-bottom: 24px"
+              />
+              <hr
+                style="
+                  width: 100%;
+                  height: 4px;
+                  background-color: rgba(242, 243, 243, 0.15);
+                  margin-bottom: 19px;
+                "
+              />
+              <div
+                class="answers-wrapper grid"
+                style="
+                  display: flex;
+                  gap: 8px;
+                  align-items: center;
+                  padding: 0 16px;
+                "
+              >
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="34"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">34</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="36"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">36</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="53"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">53</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="44"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">44</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="66"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">66</span>
+                </label>
+                <label
+                  class="field-label grid"
+                  style="width: 41px; height: 41px; margin: 0"
+                >
+                  <input
+                    class="field-input grid"
+                    type="radio"
+                    value="42"
+                    name="question11"
+                    required
+                    style="
+                      width: 41px;
+                      height: 41px;
+                      background-color: #ffffff;
+                      position: relative;
+                    "
+                  />
+                  <span class="input-content" style="left: 9px">42</span>
+                </label>
+              </div>
+            </fieldset>
+          </form>
+          <button
+            class="cta-btn form disabled"
+            type="submit"
+            form="test-form"
+            id="next-btn"
+          >
+            Далее
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg class="mobile-menu-btn-icon" width="28" height="28">
+          <use href="./assets/icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" rel="noreferrer noopener nofollow"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#quote" rel="noreferrer noopener nofollow"
+              >Информация о тесте</a
+            >
+          </li>
+          <li class="nav-item clr">
+            <a href="./form.html" rel="noreferrer noopener nofollow"
+              >Пройти тест</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/test-form.js"></script>
+  </body>
+</html>
