@@ -11,6 +11,13 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.header.result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .menu-btn {
   color: #696969;
 }

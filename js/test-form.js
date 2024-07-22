@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const testFormRef = document.querySelector(".test-form");
   const formItemsRef = document.querySelectorAll(".test-form fieldset");
   const inputsRef = document.querySelectorAll("input[type=radio]");
+  const nextStepButtons = document.querySelectorAll(".cta-btn.form");
   const progressBarRef = document.querySelector(".progress-bar");
   const loaderRef = document.querySelector(".result-load");
   let currentStep = 0;
@@ -27,10 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
       showStep(currentStep);
       updateProgress();
     }
-    if (e.target.name === formItemsRef.length.toString()) {      
+    if (e.target.name === formItemsRef.length.toString()) {
       testFormRef.style.display = "none";
       loaderRef.style.display = "block";
+      nextPage();
     }
+  }
+
+  function nextPage() {
+    const timerId = setTimeout(() => {
+      location.replace("./result.html");
+    }, 2000);
+
+    console.log(timerId);
   }
 
   function handleButton(e) {
@@ -41,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
     targetBtnRef.classList.remove("disabled");
     targetBtnRef.classList.add("active");
   }
-  const nextStepButtons = document.querySelectorAll(".cta-btn.form");
 
   nextStepButtons.forEach((button) => {
     button.addEventListener("click", nextStep);

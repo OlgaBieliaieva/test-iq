@@ -76,6 +76,15 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
+    url("../../assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf"),
+    url("../../assets/fonts/Roboto/Roboto-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
     url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
     url("../../assets/fonts/Roboto/Roboto-Bold.woff") format("woff");
   font-display: swap;

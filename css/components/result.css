@@ -1,0 +1,105 @@
+.test-result {
+  position: relative;
+  height: calc(100vh - 47px);
+  padding: 18px 15px;
+  color: var(--color-secondary);
+  text-align: center;
+  overflow: hidden;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-secondary);
+  background-image: url(../../assets/images/rain_bg2.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../assets/images/rain_bg2@2x.jpg);
+  }
+}
+.result-title {
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.result-content {
+  font-size: var(--font-size-s);
+  line-height: 1.28;
+  margin-bottom: 22px;
+}
+.result-content > .accent {
+  text-decoration: underline;
+}
+.result-subtitle {
+  color: var(--color-success);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.result-content.bg {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xxs);
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.content-bg {
+  width: 256px;
+  height: 114px;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #1c2741;
+  border-radius: 6px;
+}
+.text {
+  color: var(--color-success);
+  font-size: 11px;
+  line-height: 2.72;
+  letter-spacing: 0.1em;
+}
+.timer {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.call {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px;
+  width: 290px;
+  height: 92px;
+  background-color: #eb1b00;
+  border-radius: 5px;
+  color: var(--color-secondary);
+  z-index: 1;
+}
+.response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  color: var(--color-secondary);
+  overflow: hidden;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-secondary);
+  background-image: url(../../assets/images/rain_bg2.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../assets/images/rain_bg2@2x.jpg);
+  }
+}

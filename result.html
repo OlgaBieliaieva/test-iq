@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Точный и быстрый тест на определение IQ"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Результаты теста на определение IQ</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container header result">
+        <nav>
+          <button class="menu-btn js-open-menu" type="button">
+            <svg class="btn-icon" width="24" height="16">
+              <use href="./assets/icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <img src="./assets/images/logo.png" alt="логотип" width="48" />
+        <h1 class="page-title" style="font-size: 20px">готово!</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container test-result">
+          <h1 class="result-title">Ваш результат рассчитан:</h1>
+          <p class="result-content">
+            <span class="accent">Вы относитесь к 3%</span> респондентов, чей
+            уровень интеллекта более чем на 15 пунктов отличается от среднего в
+            большую или меньшую сторону!
+          </p>
+          <h2 class="result-subtitle">Скорее получите свой результат!</h2>
+          <div class="content-bg">
+            <p class="result-content bg">
+              В целях защиты персональных данных результат теста, их подробная
+              интерпретация и рекомендации доступны в виде голосового сообщения
+              по звонку с вашего мобильного телефона
+            </p>
+          </div>
+          <p class="text">
+            Звоните скорее, запись доступна всего <br />
+            <span class="timer"></span> минут
+          </p>
+          <button class="call">
+            <svg class="mobile-menu-btn-icon" width="29" height="29">
+              <use href="./assets/icons/sprite.svg#phone"></use>
+            </svg>
+            <p style="text-align: start">
+              Позвонить и прослушать<br />результат
+            </p>            
+          </button>
+        </div>
+        <picture class="img-lightning up" style="top: 415px">
+          <source
+            srcset="
+              ./assets/images/lightning_res.png    1x,
+              ./assets/images/lightning_res@2x.png 2x
+            "
+            src="./assets/images/lightning_res.png"
+            type="image/png"
+          />
+          <img src="./assets/images/lightning_res.png" alt="молния" />
+        </picture>
+        <picture class="img-lightning down" style="top: 368px">
+          <source
+            srcset="
+              ./assets/images/lightning_res-1.png    1x,
+              ./assets/images/lightning_res-1@2x.png 2x
+            "
+            src="./assets/images/lightning_res-1.png"
+            type="image/png"
+          />
+          <img src="./assets/images/lightning_res-1.png" alt="молния" />
+        </picture>
+      </section>
+      <section>
+        <div class="container response"></div>
+      </section>
+    </main>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg class="mobile-menu-btn-icon" width="28" height="28">
+          <use href="./assets/icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" rel="noreferrer noopener nofollow"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#quote" rel="noreferrer noopener nofollow"
+              >Информация о тесте</a
+            >
+          </li>
+          <li class="nav-item clr">
+            <a href="./form.html" rel="noreferrer noopener nofollow"
+              >Пройти тест</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/result.js"></script>
+  </body>
+</html>
