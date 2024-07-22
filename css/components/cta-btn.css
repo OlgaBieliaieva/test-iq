@@ -21,6 +21,11 @@
   border: 1px solid var(--color-secondary);
   margin-bottom: 52px;
 }
+.cta-btn.form {
+  position: fixed;
+  bottom: 25px;
+  left: 65px;
+}
 .form.disabled {
   color: var(--color-form-btn-disabled);
   background-color: var(--background-form-btn-disabled);
